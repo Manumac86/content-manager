@@ -62,6 +62,15 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SkillSkill extends Struct.ComponentSchema {
+  collectionName: 'components_skill_skills';
+  info: {
+    displayName: 'Skill';
+    icon: 'check';
+  };
+  attributes: {};
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -70,6 +79,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'skill.skill': SkillSkill;
     }
   }
 }
