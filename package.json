@@ -21,7 +21,6 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.12.5",
     "@strapi/plugin-users-permissions": "5.12.5",
-    "@strapi/provider-upload-local": "^5.13.0",
     "@strapi/strapi": "5.12.5",
     "@tailwindcss/vite": "^4.1.4",
     "codemirror": "^6.0.0",
@@ -39,6 +38,10 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10.9.0"
   },
   "strapi": {
     "uuid": "6135ba50-0881-416e-b39e-592981285cc1"
