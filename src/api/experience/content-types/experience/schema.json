@@ -36,14 +36,16 @@
       "component": "skill.skill"
     },
     "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "regex": "\\bhttps?:\\/\\/(?:www\\.)?[^\\s/$.?#].[^\\s]*\\b"
     }
   }
 }
