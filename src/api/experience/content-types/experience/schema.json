@@ -34,6 +34,16 @@
       "type": "component",
       "repeatable": true,
       "component": "skill.skill"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
