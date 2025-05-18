@@ -21,6 +21,7 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.12.5",
     "@strapi/plugin-users-permissions": "5.12.5",
+    "@strapi/provider-upload-local": "^5.13.0",
     "@strapi/strapi": "5.12.5",
     "@tailwindcss/vite": "^4.1.4",
     "codemirror": "^6.0.0",

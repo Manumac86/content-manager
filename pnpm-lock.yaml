@@ -14,6 +14,9 @@ importers:
       '@strapi/plugin-users-permissions':
         specifier: 5.12.5
         version: 5.12.5(599c815de6987fb30e5aeaf9daaa6c0b)
+      '@strapi/provider-upload-local':
+        specifier: ^5.13.0
+        version: 5.13.0
       '@strapi/strapi':
         specifier: 5.12.5
         version: 5.12.5(@babel/runtime@7.27.0)(@codemirror/autocomplete@6.18.6)(@codemirror/language@6.11.0)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.10)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.36.5)(@swc/helpers@0.5.17)(@types/hoist-non-react-statics@3.3.6)(@types/node@20.17.30)(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(codemirror@6.0.1)(esbuild@0.25.2)(koa@2.15.4)(lightningcss@1.29.2)(pg@8.8.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(redux@4.2.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.39.0)(type-fest@4.40.0)
@@ -1590,6 +1593,10 @@ packages:
     resolution: {integrity: sha512-c/3ZW97D+l0Iogj/XQi+5fuSVqw+/mSMQ63CnFo2Shp47+/YlRg0JJJBo33zc3/fEt1vCpyr0zNpzdKkvRc91g==}
     engines: {node: '>=18.0.0 <=22.x.x', npm: '>=6.0.0'}
 
+  '@strapi/provider-upload-local@5.13.0':
+    resolution: {integrity: sha512-Re4DDF+LXqik5dHNYtA9iVofNsogi//mmWP65/6RA7qRWnXSz18UtbHSbA4BfmyHFICldpmmuwkzep46h2rJmw==}
+    engines: {node: '>=18.0.0 <=22.x.x', npm: '>=6.0.0'}
+
   '@strapi/review-workflows@5.12.5':
     resolution: {integrity: sha512-To81s3+N7DH/rVyGakeyJ0INOJWW7oa5yaiSAjWH1N387NtvGgbsNeurjAVt/3FSlYXj/tW5aOVGSQbJ5ZnEjA==}
     engines: {node: '>=18.0.0 <=22.x.x', npm: '>=6.0.0'}
@@ -1637,6 +1644,10 @@ packages:
 
   '@strapi/utils@5.12.5':
     resolution: {integrity: sha512-YEBu1Tr8aQa5CNhLB+3uEb4+W05N2egtO7h0YEwcHrm9glLC8gc9qPmHCm9Bz4P435CoRbDwtwr4HJb9s9h3Ow==}
+    engines: {node: '>=18.0.0 <=22.x.x', npm: '>=6.0.0'}
+
+  '@strapi/utils@5.13.0':
+    resolution: {integrity: sha512-SFUBgQKBu3VC6yY940D7GWHY7u1gXvfnx5dVGV1z5JIzIUeFRbipogrmfhJxAFxFdQSnfjLUsmwILOlLP4tucA==}
     engines: {node: '>=18.0.0 <=22.x.x', npm: '>=6.0.0'}
 
   '@swc/core-darwin-arm64@1.11.21':
@@ -6470,18 +6481,6 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@formatjs/intl@2.10.0(typescript@5.4.4)':
-    dependencies:
-      '@formatjs/ecma402-abstract': 1.18.2
-      '@formatjs/fast-memoize': 2.2.0
-      '@formatjs/icu-messageformat-parser': 2.7.6
-      '@formatjs/intl-displaynames': 6.6.6
-      '@formatjs/intl-listformat': 7.5.5
-      intl-messageformat: 10.5.11
-      tslib: 2.8.1
-    optionalDependencies:
-      typescript: 5.4.4
-
   '@formatjs/intl@2.10.0(typescript@5.8.3)':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
@@ -7420,7 +7419,7 @@ snapshots:
       '@strapi/design-system': 2.0.0-rc.21(@babel/runtime@7.27.0)(@codemirror/autocomplete@6.18.6)(@codemirror/language@6.11.0)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.10)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.36.5)(@strapi/icons@2.0.0-rc.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(codemirror@6.0.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@strapi/icons': 2.0.0-rc.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@strapi/permissions': 5.12.5
-      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.4.4)
+      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.8.3)
       '@strapi/typescript-utils': 5.12.5
       '@strapi/utils': 5.12.5
       '@testing-library/dom': 10.1.0
@@ -7613,7 +7612,7 @@ snapshots:
       '@strapi/database': 5.12.5(@types/node@20.17.30)(pg@8.8.0)
       '@strapi/design-system': 2.0.0-rc.21(@babel/runtime@7.27.0)(@codemirror/autocomplete@6.18.6)(@codemirror/language@6.11.0)(@codemirror/lint@6.8.5)(@codemirror/search@6.5.10)(@codemirror/state@6.5.2)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.36.5)(@strapi/icons@2.0.0-rc.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1)))(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(codemirror@6.0.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@strapi/icons': 2.0.0-rc.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.17(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.4.4)
+      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.8.3)
       '@strapi/utils': 5.12.5
       date-fns: 2.30.0
       date-fns-tz: 2.0.1(date-fns@2.30.0)
@@ -7701,7 +7700,7 @@ snapshots:
       '@strapi/generators': 5.12.5
       '@strapi/logger': 5.12.5
       '@strapi/permissions': 5.12.5
-      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.4.4)
+      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.8.3)
       '@strapi/typescript-utils': 5.12.5
       '@strapi/utils': 5.12.5
       bcryptjs: 2.4.3
@@ -8057,6 +8056,11 @@ snapshots:
       '@strapi/utils': 5.12.5
       fs-extra: 11.2.0
 
+  '@strapi/provider-upload-local@5.13.0':
+    dependencies:
+      '@strapi/utils': 5.13.0
+      fs-extra: 11.2.0
+
   '@strapi/review-workflows@5.12.5(16771d73e5d029c65aadf9649627a77d)':
     dependencies:
       '@reduxjs/toolkit': 1.9.7(react-redux@8.1.3(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(redux@4.2.1))(react@18.3.1)
@@ -8111,7 +8115,7 @@ snapshots:
       '@strapi/logger': 5.12.5
       '@strapi/permissions': 5.12.5
       '@strapi/review-workflows': 5.12.5(16771d73e5d029c65aadf9649627a77d)
-      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.4.4)
+      '@strapi/types': 5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.8.3)
       '@strapi/typescript-utils': 5.12.5
       '@strapi/upload': 5.12.5(bae960aa07c1e3d4d89f0d9fed6251d8)
       '@strapi/utils': 5.12.5
@@ -8212,34 +8216,6 @@ snapshots:
       - webpack-cli
       - webpack-dev-server
       - webpack-plugin-serve
-
-  '@strapi/types@5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.4.4)':
-    dependencies:
-      '@casl/ability': 6.5.0
-      '@koa/cors': 5.0.0
-      '@koa/router': 12.0.2
-      '@strapi/database': 5.12.5(@types/node@20.17.30)(pg@8.8.0)
-      '@strapi/logger': 5.12.5
-      '@strapi/permissions': 5.12.5
-      '@strapi/utils': 5.12.5
-      commander: 8.3.0
-      koa: 2.15.4
-      koa-body: 6.0.1
-      node-schedule: 2.1.1
-      typedoc: 0.25.10(typescript@5.4.4)
-      typedoc-github-wiki-theme: 1.1.0(typedoc-plugin-markdown@3.17.1(typedoc@0.25.10(typescript@5.8.3)))(typedoc@0.25.10(typescript@5.8.3))
-      typedoc-plugin-markdown: 3.17.1(typedoc@0.25.10(typescript@5.8.3))
-    transitivePeerDependencies:
-      - '@types/node'
-      - better-sqlite3
-      - mysql
-      - mysql2
-      - pg
-      - pg-native
-      - sqlite3
-      - supports-color
-      - tedious
-      - typescript
 
   '@strapi/types@5.12.5(@types/node@20.17.30)(pg@8.8.0)(typescript@5.8.3)':
     dependencies:
@@ -8357,6 +8333,19 @@ snapshots:
       - typescript
 
   '@strapi/utils@5.12.5':
+    dependencies:
+      '@sindresorhus/slugify': 1.1.0
+      date-fns: 2.30.0
+      execa: 5.1.1
+      http-errors: 2.0.0
+      lodash: 4.17.21
+      node-machine-id: 1.1.12
+      p-map: 4.0.0
+      preferred-pm: 3.1.2
+      yup: 0.32.9
+      zod: 3.24.3
+
+  '@strapi/utils@5.13.0':
     dependencies:
       '@sindresorhus/slugify': 1.1.0
       date-fns: 2.30.0
@@ -11837,7 +11826,7 @@ snapshots:
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/icu-messageformat-parser': 2.7.6
-      '@formatjs/intl': 2.10.0(typescript@5.4.4)
+      '@formatjs/intl': 2.10.0(typescript@5.8.3)
       '@formatjs/intl-displaynames': 6.6.6
       '@formatjs/intl-listformat': 7.5.5
       '@types/hoist-non-react-statics': 3.3.6
@@ -12694,14 +12683,6 @@ snapshots:
     dependencies:
       handlebars: 4.7.8
       typedoc: 0.25.10(typescript@5.8.3)
-
-  typedoc@0.25.10(typescript@5.4.4):
-    dependencies:
-      lunr: 2.3.9
-      marked: 4.3.0
-      minimatch: 9.0.5
-      shiki: 0.14.7
-      typescript: 5.4.4
 
   typedoc@0.25.10(typescript@5.8.3):
     dependencies:
