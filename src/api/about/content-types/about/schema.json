@@ -16,8 +16,7 @@
       "type": "string"
     },
     "excerpt": {
-      "type": "string",
-      "maxLength": 500
+      "type": "richtext"
     },
     "blocks": {
       "type": "dynamiczone",
