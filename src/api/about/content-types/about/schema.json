@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "excerpt": {
-      "type": "richtext"
-    },
     "blocks": {
       "type": "dynamiczone",
       "components": [
@@ -26,6 +23,9 @@
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "excerpt": {
+      "type": "text"
     }
   }
 }
