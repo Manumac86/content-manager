@@ -1,9 +1,18 @@
-export default () => ({
+export default ({ env }) => ({
   upload: {
     config: {
-      provider: "local",
+      provider: "strapi-provider-upload-supabase-v4",
       providerOptions: {
-        sizeLimit: 100000,
+        apiUrl: process.env.SUPABASE_API_URL,
+        apiKey: process.env.SUPABASE_API_KEY,
+        bucket: process.env.SUPABASE_BUCKET,
+        directory: process.env.SUPABASE_DIRECTORY,
+        options: {},
+      },
+      actionOptions: {
+        upload: {},
+        uploadStream: {},
+        delete: {},
       },
     },
   },
