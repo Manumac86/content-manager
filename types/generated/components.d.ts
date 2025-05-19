@@ -65,10 +65,13 @@ export interface SharedSlider extends Struct.ComponentSchema {
 export interface SkillSkill extends Struct.ComponentSchema {
   collectionName: 'components_skill_skills';
   info: {
+    description: '';
     displayName: 'Skill';
     icon: 'check';
   };
-  attributes: {};
+  attributes: {
+    skill: Schema.Attribute.String;
+  };
 }
 
 declare module '@strapi/strapi' {

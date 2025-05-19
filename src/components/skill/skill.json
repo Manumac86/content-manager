@@ -2,8 +2,13 @@
   "collectionName": "components_skill_skills",
   "info": {
     "displayName": "Skill",
-    "icon": "check"
+    "icon": "check",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "skill": {
+      "type": "string"
+    }
+  }
 }
